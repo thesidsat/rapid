@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rapid</title>
+</head>
+<body>
+    <h1>Data Preview</h1>
+    {{ raw_data.to_html(classes="table table-striped") | safe}}
+    <h1>Data Summary</h1>
+    {{ summary.to_html(classes="table table-striped") | safe}}
+</body>
+</html>
